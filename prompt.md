@@ -170,3 +170,8 @@ Before completion: verify valid `.ipynb` structure and Colab compatibility; Lang
 Preserve this complete specification in `prompt.md`. If testing reveals problems and prompt is revised, maintain a short **Prompt Revision History** section in `prompt.md` documenting changes and reasons. Do not invent revisions that did not occur. Do not commit or push to GitHub yet.
 
 Once ready, summarize files created, graph structure, business rules, tests, validations, and issues still requiring Google Colab testing. Distinguish local checks from unexecuted tests. Wait for instructions before committing or pushing.
+
+## Prompt Revision History
+
+- Added descriptive conditional-edge labels (`valid`, `invalid`, `in stock`, `try substitute`, and `no substitute`) to make the graph visualization clearer. The graph architecture and business rules are unchanged.
+- Added an independent test for the feasible path where the only available substitute is insufficient, completing coverage of stock-route exhaustion after zero, one, and two alternatives.
